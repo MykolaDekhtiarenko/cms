@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{% static 'mainapp/css/login.css' %}" type="text/css">
+    <script src="{% static 'mainapp/js/login.js' %}"></script>
+    <script src="{% static 'mainapp/js/register.js' %}"></script>
+
+</head>
+<body>
+{% block content %}
+
+
+
+    <div class="form">
+        <ul class="tab-group">
+            <li class="tab " id="signup-tab"><a href="#signup">Реєстрація</a></li>
+            <li class="tab active" id="login-tab"><a href="#login">Вхід в кабінет</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="login">
+                <h1>Увійдіть до CMS</h1>
+
+                <form action="{% url 'login' %}" autocomplete="off" method="post">
+                    {% csrf_token %}
+
+                    <div class="field-wrap">
+                        <label id="login-label">
+                            Логін<span class="req">*</span>
+                        </label>
+                        <td>{{ form.username }}</td>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label id="password-label">
+                            Пароль<span class="req">*</span>
+                        </label>
+                        <td autocomplete="">{{ form.password }}</td>
+
+                    </div>
+
+                    <p class="forgot"><a href="{% url 'password_reset' %}">Забули пароль?</a></p>
+                    {% if form.errors %}
+                        <p>Your username and password didn't match. Please try again.</p>
+                    {% endif %}
+
+                    {% if next %}
+                        {% if user.is_authenticated %}
+                            <p>Your account doesn't have access to this page. To proceed,
+                                please login with an account that has access.</p>
+                        {% else %}
+                            <p>Please login to see this page.</p>
+                        {% endif %}
+                    {% endif %}
+
+                    <input class="button button-block" type="submit" value="Увійти"/>
+                    <input type="hidden" name="next" value=""/>
+                </form>
+
+            </div>
+            <div id="signup">
+                <h1>Реєстрація</h1>
+
+                <form method="post" action="javascript:void(0);" autocomplete="off" >
+                    <div class="displaynone">{% csrf_token %}</div>
+
+                    <div class="field-wrap">
+                        <label >
+                            Логін<span class="req">*</span>
+                        </label>
+                        <input id="username" type="text" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Ваш ЄДРПОУ<span class="req">*</span>
+                        </label>
+                        <input id="edrpou" type="text" required autocomplete="off"/>
+                    </div>
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>
+                                Ім'я<span class="req">*</span>
+                            </label>
+
+                            <input id="first_name" type="text" required autocomplete="off"/>
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>
+                                Прізвище<span class="req">*</span>
+                            </label>
+                            <input id="last_name" type="text" required autocomplete="off"/>
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            E-mail<span class="req">*</span>
+                        </label>
+                        <input id="email" type="email" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Телефон <span class="req">*</span>
+                        </label>
+                        <input id="phone" name="text" type="phone" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Пароль<span class="req">*</span>
+                        </label>
+                        <input id="password" name="c-password" type="password" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Адреса <span class="req">*</span>
+                        </label>
+                        <input id="address" type="text" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Діяльність
+                        </label>
+                        <input id="activity" type="text" required autocomplete="off"/>
+                    </div>
+
+                    <button id="register" type="submit" class="button button-block"/> Зареєструвати</button>
+
+                </form>
+
+            </div>
+
+
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
+{% endblock %}
+</body>

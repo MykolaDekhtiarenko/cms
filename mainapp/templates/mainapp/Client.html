@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'mainapp/css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">CMS</div>
+        <div class="logout-wrapper">
+
+            <div class="logout"><span class="yellow-font">Welcome, {{ user.username }}</span> /  <a class="white-font" href="/logout">Змінити пароль</a> / <a class="white-font" href="/logout">Вихід</a></div>
+        </div>
+    </div>
+    <div class="main-block container-fluid">
+        <div class="main-block-left col-xs-12 col-sm-8 col-md-8 ">
+            <h1 class="main-block-title">Ваші кампанії</h1>
+            <table class="campain-table table-striped">
+                <tr>
+                    <th class="th-header">Предмет</th>
+                    <th class="th-header">Бюджет</th>
+                    <th class="th-header">Дата початку</th>
+                    <th class="th-header">Закінчується</th>
+                    <th class="th-header">Статус</th>
+                    <th class="th-header"></th>
+                </tr>
+            {% for campain in campains %}
+               <tr>
+                    <th>{{ campain.subject }}</th>
+                    <th>{{ campain.plannedBudget }}</th>
+                    <th>{{ campain.startDate }}</th>
+                    <th>{{ campain.endDate }}</th>
+                    <th>{{ campain.state }}</th>
+                    <th><a href="api/campaign/{{ campain.id }}">Перейти</a></th>
+                </tr>
+            {% empty %}
+                <div class="campain-info">У вас поки немає жодної кампанії.</div>
+            {% endfor %}
+            </table>
+            <div class="half-width float-left">Загальний бюджет: {{ budget }}</div> <div class="half-width float-right"> <a href="/api/campaign/order" class="float-right btn btn-primary btn-order">Замовити</a></div>
+        </div>
+        <div class="main-block-right col-xs-12 col-sm-4 col-md-4">
+           <div class="personal-block-wrapper">
+               <div class="personal-block">
+
+                   <div class="personal-block-title ">
+                       <span class="vertical-centered">Персональні дані</span>
+                   </div>
+                   <div class="personal-block-elements">
+                       <span class="vertical-centered ">ЄДРПОУ: </span><span  class="vertical-centered ">{{ client.edrpou }}</span>
+                   </div>
+                   <div class="personal-block-elements ">
+                       <span class="vertical-centered ">Ім'я: </span><span  class="vertical-centered ">{{ user.first_name }}</span>
+                   </div>
+                   <div class="personal-block-elements ">
+                       <span class="vertical-centered ">Прізвище: </span><span  class="vertical-centered ">{{ user.last_name }}</span>
+                   </div>
+                    <div class="personal-block-elements ">
+                        <span class="vertical-centered ">E-mail: </span><span  class="vertical-centered ">{{ user.email }}</span>
+                   </div>
+                   <div class="personal-block-elements ">
+                        <span class="vertical-centered ">Контактний номер: </span><span  class="vertical-centered ">{{ client.phone }}</span>
+                   </div>
+                   <div class="personal-block-elements ">
+                        <span class="vertical-centered ">Адреса: </span><span  class="vertical-centered ">{{ client.address }}</span>
+                   </div>
+                    <div class="personal-block-elements ">
+                        <span class="vertical-centered ">Контактна особа: </span><span  class="vertical-centered ">{{ client.contactPersone }}</span>
+                   </div>
+
+               </div>
+           </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

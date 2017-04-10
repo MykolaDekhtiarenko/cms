@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Campaign</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+    {% load staticfiles %}
+
+    <link rel="stylesheet" href="{% static 'mainapp/css/main.css' %}" type="text/css">
+    <script src="{% static 'mainapp/js/newReportController.js' %}"></script>
+
+    {#    Datepicker #}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+</head>
+<body>
+<script>
+    var employee = {{ employee }};
+    var forcampaign = {{ campaign }};
+        $(document).ready(function () {
+            var date_input = $('input[name="date"]'); //our date input has the name "date"
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            var options = {
+                format: 'yyyy-mm-dd',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            };
+            date_input.datepicker(options);
+        })
+</script>
+
+<div class="header">
+    <div class="header-title">CMS</div>
+
+</div>
+<div class="container">
+    <h1 class="center">Додати звіт</h1>
+    <div id="csrfmiddlewaretoken" class="displaynone">{{ csrf_token }}</div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="report">Звіт:</label>
+                <textarea class="form-control" rows="15" id="report"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group"> <!-- Date input -->
+                        <input class="form-control" id="dated" name="date" placeholder="Датовано: YYYY-MM-DD" type="text"/>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="center"><input id="new-report-btn" class="btn btn-primary" type="submit" value="Додати"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+
+</div>
+</body>
+</html>

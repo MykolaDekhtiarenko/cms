@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'mainapp/css/campaign.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+     <script src="{% static 'mainapp/js/controller.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Стан', 'Грошей'],
+          ['Залишилося', ({{ campaign.plannedBudget }}-{{ campaign.moneySpent }})],
+          ['Витрачено', {{campaign.moneySpent}}],
+        ]);
+
+        var options = {
+          title: 'Загальний бюджет: {{ campaign.plannedBudget }}'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</head>
+<body>
+<div class="main-block-wrapper container-fluid">
+    <div class="menu-coloumn col-xs-3 col-md-3">
+        <div class="icon-place">
+            <div class="title-wrapper">CMS</div>
+        </div>
+         <div class="manu-items">
+             <div id="main-info-click" class="item"><span class="title">Основні дані</span></div>
+             <div id="reports-click" class="item"><span class="title">Звіти</span></div>
+             <div id="broadcasts-click" class="item"><span class="title">Трансляції</span></div>
+             <div id="publishes-click" class="item"><span class="title">Публікації</span></div>
+             <div id="videos-click" class="item"><span class="title">Рекламні ролики</span></div>
+             <div id="advmaterials-click" class="item"><span class="title">Рекламні матеріали</span></div>
+             <div id="back-click" class="item"><span class="title">Повернутися до усіх кампаній</span></div>
+         </div>
+    </div>
+    <div  class="main-block col-xs-9 col-md-9">
+        <div id="header"   class="title-place"><span class="campain-title">{{ campaign.subject }}</span></div>
+        <div id="main-info" class="block chart-block-wrapper" >
+            <div class="col-xs-12 col-md-6 campain-main-info">
+                <h1 class="campain-main-info-title">Основні дані</h1>
+                <div class="campain-main-info-block">
+                    <table>
+                        <tr>
+                            <th class="th-title">Керівник:</th>
+                            <th class="th-val">{{ campaign.employee.user.first_name }} {{ campaign.employee.user.last_name }}</th>
+                        </tr>
+                         <tr>
+                            <th class="th-title">Початок:</th>
+                            <th class="th-val">{{ campaign.startDate }}</th>
+                        </tr>
+                         <tr>
+                            <th class="th-title">Закінчення:</th>
+                            <th class="th-val">{{ campaign.endDate }}</th>
+                        </tr>
+                         <tr>
+                            <th class="th-title">Укладений:</th>
+                            <th class="th-val">{{ campaign.signDate }}</th>
+                        </tr>
+                        <tr>
+                            <th class="th-title">Оновлена:</th>
+                            <th class="th-val">{{ campaign.lastUpdateDate }}</th>
+                        </tr>
+                        <tr>
+                            <th class="th-title">Стан:</th>
+                            <th class="th-val">{{ campaign.state }}</th>
+                        </tr>
+                        <tr>
+                            <th class="th-title">Послуги:</th>
+                            <th class="th-val">
+                            {% for service in campaign.service.all %}
+                                {{ service.name }}; <br>
+                            {% endfor %}
+                            </th>
+                        </tr>
+                    </table>
+
+{#                    <span class="info-item-title"></span> <span class="info-item-val">{{ campaign.employee.user.first_name }} {{ campaign.employee.user.last_name }}</span>#}
+{#                    <span class="info-item-title">Початок:</span> <span class="info-item-val">{{ campaign.startDate }}</span>#}
+{#                    <span class="info-item-title">Закінчення:</span> <span class="info-item-val">{{ campaign.endDate }}</span>#}
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-6 chart-block-wrapper">
+                <div id="piechart"></div>
+            </div>
+
+            <div class="campaign-big-block col-xs-12">
+                <h1>Опис</h1>
+                <div class="campaign-big-block-content" >{{ campaign.description }}</div>
+            </div>
+
+            <div class="campaign-big-block col-xs-12 col-md-12">
+                <h1>Деталі оплати</h1>
+                <div class="campaign-big-block-content" > {{ campaign.paymentDetails }}</div>
+            </div>
+
+        </div>
+        <div id="reports" class="block col-xs-12 col-md-12 displaynone">
+            <div class="main-title-wrapper"><h1>Звіти</h1></div>
+            {% for report in reports %}
+                <div class="report-wrapper">
+                    <div class="report-date">Звіт за {{ report.date }}</div>
+                    <div class='report-body'>{{ report.report }}</div>
+                    <div class="report-author">{{ report.employee.user.first_name }} {{ report.employee.user.last_name }}</div>
+                </div>
+            {% endfor %}
+        </div>
+        <div id="broadcasts" class="block col-xs-12 col-md-12 displaynone">
+            <div class="main-title-wrapper"><h1>Трансляції</h1></div>
+            <table>
+                <tr>
+                    <th class="broadcasts-th-title">SKU</th>
+                    <th class="broadcasts-th-title">Телеканал</th>
+                    <th class="broadcasts-th-title">Тривалість</th>
+                    <th class="broadcasts-th-title">К-ть виходів</th>
+                    <th class="broadcasts-th-title">Час виходу</th>
+                    <th class="broadcasts-th-title">Показувався з</th>
+                    <th class="broadcasts-th-title">Показувався до</th>
+                    <th class="broadcasts-th-title">Вартість</th>
+                </tr>
+            {% for broadcast in broadcasts %}
+                <tr>
+                    <th class="broadcasts-th">{{ broadcast.SKU }}</th>
+                    <th class="broadcasts-th">{{ broadcast.channel_id }}</th>
+                    <th class="broadcasts-th">{{ broadcast.duaration }}</th>
+                    <th class="broadcasts-th">{{ broadcast.times }}</th>
+                    <th class="broadcasts-th">{{ broadcast.period }}</th>
+                    <th class="broadcasts-th">{{ broadcast.startDate }}</th>
+                    <th class="broadcasts-th">{{ broadcast.endDate }}</th>
+                    <th class="broadcasts-th">{{ broadcast.price }}</th>
+                </tr>
+            {% endfor %}
+             </table>
+        </div>
+        <div id="publishes" class="block col-xs-12 col-md-12 displaynone">
+            <div class="main-title-wrapper"><h1>Публікації</h1></div>
+             <table>
+                <tr>
+                    <th class="broadcasts-th-title">SKU</th>
+                    <th class="broadcasts-th-title">Місце публікації</th>
+                    <th class="broadcasts-th-title">Місто</th>
+                    <th class="broadcasts-th-title">Тип</th>
+                    <th class="broadcasts-th-title">Формфактор</th>
+                    <th class="broadcasts-th-title">Час виходу</th>
+                    <th class="broadcasts-th-title">Кількість</th>
+                    <th class="broadcasts-th-title">Вартість</th>
+                </tr>
+                {% for publication in publications %}
+                <tr>
+                    <th class="broadcasts-th">{{ publication.SKU }}</th>
+                    <th class="broadcasts-th">{{ publication.name }}</th>
+                    <th class="broadcasts-th">{{ publication.town }}</th>
+                    <th class="broadcasts-th">{{ publication.type }}</th>
+                    <th class="broadcasts-th">{{ publication.formfactor }}</th>
+                    <th class="broadcasts-th">{{ publication.month }}/{{ publication.year }}</th>
+                    <th class="broadcasts-th">{{ publication.amount }}</th>
+                    <th class="broadcasts-th">{{ publication.price }}</th>
+                </tr>
+            {% endfor %}
+             </table>
+        </div>
+        <div id="videos" class="block col-xs-12 col-md-12 displaynone">
+            <div class="main-title-wrapper"><h1>Ролики задіяні в кампанії</h1></div>
+            <table>
+                <tr>
+                    <th class="broadcasts-th-title">SKU</th>
+                    <th class="broadcasts-th-title">Власник</th>
+                    <th class="broadcasts-th-title">Дата створення</th>
+                    <th class="broadcasts-th-title">Тривалість</th>
+                </tr>
+            {% for tvres in tvresourses %}
+                <tr>
+                    <th class="broadcasts-th">{{ tvres.SKU }}</th>
+                    <th class="broadcasts-th">{{ tvres.owner }}</th>
+                    <th class="broadcasts-th">{{ tvres.creationDate }}</th>
+                    <th class="broadcasts-th">{{ tvres.duaration }}</th>
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+        <div id="advmaterials" class="block col-xs-12 col-md-12 displaynone">
+            <div class="main-title-wrapper"><h1>Інші рекламні матеріали</h1></div>
+            <table>
+                <tr>
+                    <th class="broadcasts-th-title">SKU</th>
+                    <th class="broadcasts-th-title">Власник</th>
+                    <th class="broadcasts-th-title">Тип</th>
+                    <th class="broadcasts-th-title">Формфактор</th>
+                </tr>
+            {% for nontvres in nontvresourses %}
+                <tr>
+                    <th class="broadcasts-th">{{ nontvres.SKU }}</th>
+                    <th class="broadcasts-th">{{ nontvres.owner }}</th>
+                    <th class="broadcasts-th">{{ nontvres.type }}</th>
+                    <th class="broadcasts-th">{{ nontvres.formfactor }}</th>
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

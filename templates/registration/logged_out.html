@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function loginRedirect() {
+        window.location.href="/login"
+    }
+    </script>
+</head>
+<body onload="loginRedirect()">
+{% block content %}
+    Logged out!<br>
+    <a href="/login">Увійти знову</a>
+{% endblock %}
+</body>

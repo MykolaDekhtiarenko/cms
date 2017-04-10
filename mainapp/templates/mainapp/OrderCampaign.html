@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Campaign</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='//fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+    {% load staticfiles %}
+
+    <link rel="stylesheet" href="{% static 'mainapp/css/main.css' %}" type="text/css">
+    <script src="{% static 'mainapp/js/orderController.js' %}"></script>
+
+    {#    Datepicker #}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+</head>
+<body>
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'yyyy-mm-dd',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+<div class="header">
+        <div class="header-title">CMS</div>
+
+</div>
+<div class="container">
+    <h1 class="center">Замовити кампанію</h1>
+    <div id="csrfmiddlewaretoken" class="displaynone">{{csrf_token}}</div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="subject">Продукт:</label>
+                <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="form-group">
+                <label for="budget">Бюджет:</label>
+                <input type="number" class="form-control" id="budget">
+            </div>
+            <div class="form-group"> <!-- Date input -->
+                <label class="control-label" for="startdate">Дата початку:</label>
+                <input class="form-control" id="startdate" name="date" placeholder="YYYY-MM-DD" type="text"/>
+            </div>
+            <div class="form-group"> <!-- Date input -->
+                <label class="control-label" for="enddate">Дата закінчення:</label>
+                <input class="form-control" id="enddate" name="date" placeholder="YYYY-MM-DD" type="text" />
+            </div>
+            <div class="form-group">
+                <label for="service">Виберіть бажані послуги:</label>
+                <select multiple class="form-control" id="service" >
+                    {% for service in services %}
+                        <option value="{{ service.id }}">{{ service.name }}</option>
+                   {% endfor %}
+
+                </select>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+             <div class="form-group">
+                <label for="description">Опис:</label>
+                <textarea class="form-control" rows="18" id="description"></textarea>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="displaynone"><input id="client" type="text" value="{{ user.client.edrpou }}"></div>
+
+    <div class="center"><input id="order-btn" class="btn btn-primary" type="submit" value="Замовити" /></div>
+
+</div>
+</body>
+</html>

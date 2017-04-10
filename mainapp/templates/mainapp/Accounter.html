@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accounter</title>
+</head>
+<body>
+    <h1>Звіт по діяльності менеджерів</h1>
+    <table>
+    <tr>
+        <th>Прізвище</th>
+        <th>Ім'я</th>
+        <th>Бюджет кампаній</th>
+        <th>Ставка</th>
+        <th>Відсоток</th>
+    </tr>
+    {% for r in report %}
+    <tr>
+        <td>{{ r.last_name }}</td>
+        <td>{{ r.first_name }}</td>
+        <td>{{ r.budget }}</td>
+        <td>{{ r.salary }}</td>
+
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
