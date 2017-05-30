@@ -9,13 +9,13 @@ from django.forms import *
 from mainapp.forms import *
 
 
-# admin.site.unregister(Group)
+admin.site.unregister(Group)
 # admin.site.unregister(User)
 
 # class CampainModelAdmin(admin.ModelAdmin):
 #     def get_form(self, request, obj=None, **kwargs):
 #         if Client.objects.filter(user=request.user).exists():
-#             kwargs['exclude'] = ['signDate', 'moneySpent', 'state', 'lastUpdateDate', 'client', 'employee']
+#             kwargs['exclude'] = ['signDxate', 'moneySpent', 'state', 'lastUpdateDate', 'client', 'employee']
 #             return super(CampainModelAdmin, self).get_form(request, obj, **kwargs)
 #
 

@@ -146,11 +146,17 @@ tr{
     text-align: center;
     font-family: 'PT Sans', sans-serif;
 }
-
+#reports{
+    height: 80vh;
+    overflow: scroll;
+}
 .report-wrapper{
     background-color: #e8e8e8;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 
 .report-date{

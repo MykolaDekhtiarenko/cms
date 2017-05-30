@@ -64,6 +64,16 @@ class AdvertisingPlace(models.Model):
         return self.name
 
 class Campaign(models.Model):
+    # FRESHMAN = 'FR'
+    # SOPHOMORE = 'SO'
+    # JUNIOR = 'JR'
+    # SENIOR = 'SR'
+    # YEAR_IN_SCHOOL_CHOICES = (
+    #     (FRESHMAN, 'Freshman'),
+    #     (SOPHOMORE, 'Sophomore'),
+    #     (JUNIOR, 'Junior'),
+    #     (SENIOR, 'Senior'),
+    # )
     subject = models.CharField(max_length=100)
     description = models.TextField(null=True)
     paymentDetails = models.TextField()

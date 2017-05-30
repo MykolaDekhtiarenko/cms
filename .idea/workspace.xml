@@ -2,36 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7563bc85-dc36-4cb2-a6a3-ce26757b0dbb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/css/login.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/js/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/js/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/js/newReportController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/js/orderController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/js/register.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Accounter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Analyst.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForAnalist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForClient.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForManager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Client.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Manager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/NewReport.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/OrderCampaign.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainapp/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/registration/logged_out.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/registration/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CampainManager.iml" afterPath="$PROJECT_DIR$/.idea/CampainManager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CampainManager/settings.py" afterPath="$PROJECT_DIR$/CampainManager/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CampainManager/urls.py" afterPath="$PROJECT_DIR$/CampainManager/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/admin.py" afterPath="$PROJECT_DIR$/mainapp/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/models.py" afterPath="$PROJECT_DIR$/mainapp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/static/mainapp/css/main.css" afterPath="$PROJECT_DIR$/mainapp/static/mainapp/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/Accounter.html" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Accounter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/Client.html" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/Manager.html" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/Manager.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainapp/views.py" afterPath="$PROJECT_DIR$/mainapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,24 +56,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="db.sqlite3" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="schema #1" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="mainapp_employee" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -104,98 +66,78 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="171" column="308" lean-forward="false" selection-start-line="171" selection-start-column="308" selection-end-line="171" selection-end-column="308" />
+            <state relative-caret-position="1080">
+              <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
-                <element signature="e#3155#5027#0" expanded="false" />
-                <element signature="e#5098#6846#0" expanded="false" />
-                <element signature="e#6917#8694#0" expanded="false" />
-                <marker date="1491812371000" expanded="true" signature="3781:4158" ph="Select maina... mainapp_broadcast" />
-                <marker date="1491812371000" expanded="true" signature="4057:4132" ph="Select id Fr... mainapp_rtvresource" />
-                <marker date="1491812371000" expanded="true" signature="4218:4821" ph="Select maina... " />
-                <marker date="1491812371000" expanded="true" signature="5600:5977" ph="Select maina... mainapp_broadcast" />
-                <marker date="1491812371000" expanded="true" signature="5876:5951" ph="Select id Fr... mainapp_rtvresource" />
-                <marker date="1491812371000" expanded="true" signature="6037:6640" ph="Select maina... " />
-                <marker date="1491812371000" expanded="true" signature="7411:7800" ph="Select maina... mainapp_broadcast" />
-                <marker date="1491812371000" expanded="true" signature="7687:7762" ph="Select id Fr... mainapp_rtvresource" />
-                <marker date="1491812371000" expanded="true" signature="7873:8488" ph="Select maina... " />
-                <marker date="1491812371000" expanded="true" signature="8785:8832" ph="SELECT SUM(m... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="8785:8849" ph="SELECT SUM(m... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="8785:8850" ph="SELECT SUM(p... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="8785:8861" ph="SELECT SUM(m... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="8785:8864" ph="SELECT SUM(p... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="9054:9166" ph="SELECT last_... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="9054:9237" ph="SELECT last_... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="9054:9259" ph="SELECT last_... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="9054:9283" ph="SELECT last_... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="9054:9319" ph="SELECT last_... mainapp_campaign" />
-                <marker date="1491812371000" expanded="true" signature="9704:9762" ph="SELECT SUM(p... auth_user" />
-                <marker date="1491812371000" expanded="true" signature="9704:9976" ph="SELECT SUM(p... auth_user" />
-                <marker date="1491812371000" expanded="true" signature="9704:9999" ph="SELECT SUM(p... auth_user" />
-                <marker date="1491812371000" expanded="true" signature="9900:9975" ph="SELECT maina... mainapp_employee" />
-                <marker date="1491812371000" expanded="true" signature="10168:10247" ph="SELECT SUM(p... mainapp_campaign" />
+                <element signature="e#5574#7030#0" expanded="false" />
+                <element signature="e#7101#8878#0" expanded="false" />
+                <marker date="1492029070000" expanded="true" signature="3965:4342" ph="Select maina... mainapp_broadcast" />
+                <marker date="1492029070000" expanded="true" signature="4241:4316" ph="Select id Fr... mainapp_rtvresource" />
+                <marker date="1492029070000" expanded="true" signature="4402:5005" ph="Select maina... " />
+                <marker date="1492029070000" expanded="true" signature="5784:6161" ph="Select maina... mainapp_broadcast" />
+                <marker date="1492029070000" expanded="true" signature="6060:6135" ph="Select id Fr... mainapp_rtvresource" />
+                <marker date="1492029070000" expanded="true" signature="6221:6824" ph="Select maina... " />
+                <marker date="1492029070000" expanded="true" signature="7595:7984" ph="Select maina... mainapp_broadcast" />
+                <marker date="1492029070000" expanded="true" signature="7871:7946" ph="Select id Fr... mainapp_rtvresource" />
+                <marker date="1492029070000" expanded="true" signature="8057:8672" ph="Select maina... " />
+                <marker date="1492029070000" expanded="true" signature="8969:9016" ph="SELECT SUM(m... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="8969:9033" ph="SELECT SUM(m... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="8969:9034" ph="SELECT SUM(p... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="8969:9045" ph="SELECT SUM(m... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="8969:9048" ph="SELECT SUM(p... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="9238:9350" ph="SELECT last_... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="9238:9421" ph="SELECT last_... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="9238:9443" ph="SELECT last_... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="9238:9467" ph="SELECT last_... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="9238:9503" ph="SELECT last_... mainapp_campaign" />
+                <marker date="1492029070000" expanded="true" signature="9646:9941" ph="SELECT SUM(p... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="9842:9917" ph="SELECT maina... mainapp_employee" />
+                <marker date="1492029070000" expanded="true" signature="10099:10229" ph="SELECT repor... " />
+                <marker date="1492029070000" expanded="true" signature="10099:10275" ph="SELECT repor... " />
+                <marker date="1492029070000" expanded="true" signature="10099:10276" ph="SELECT repor... " />
+                <marker date="1492029070000" expanded="true" signature="10425:10539" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10557" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10581" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10598" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10614" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10636" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10653" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10664" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10686" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10713" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="10425:10735" ph="SELECT first... auth_user" />
+                <marker date="1492029070000" expanded="true" signature="11132:11211" ph="SELECT SUM(p... mainapp_campaign" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Analyst.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Analyst.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CampainManager/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/console.sql">
+      <file leaf-file-name="CampaignForClient.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForClient.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="212" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="295" />
+            <state relative-caret-position="15">
+              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainapp_employee" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_employee">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Accounter.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Accounter.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="225">
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth_user" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/auth_user">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -223,6 +165,8 @@
       <find>white</find>
       <find>an</find>
       <find>{#</find>
+      <find>personal-b</find>
+      <find>perso</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,7 +185,6 @@
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/campaigns.html" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/controller.js" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/templ.html" />
-        <option value="$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignView.html" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/Campaign.html" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/js/controller.js" />
@@ -250,7 +193,6 @@
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignOrder.html" />
         <option value="$PROJECT_DIR$/CampainManager/urls.py" />
         <option value="$PROJECT_DIR$/mainapp/forms.py" />
-        <option value="$PROJECT_DIR$/CampainManager/settings.py" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/js/orderController.js" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/js/дщпшт.js" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/css/login.scss" />
@@ -258,8 +200,6 @@
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/css/login.css" />
         <option value="$PROJECT_DIR$/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/js/register.js" />
-        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/Client.html" />
-        <option value="$PROJECT_DIR$/mainapp/models.py" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/Analyst.html" />
         <option value="$PROJECT_DIR$/mainapp/serializers.py" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForClient.html" />
@@ -267,12 +207,16 @@
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForAnalist.html" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/NewReport.html" />
         <option value="$PROJECT_DIR$/mainapp/urls.py" />
+        <option value="$PROJECT_DIR$/mainapp/static/mainapp/js/newReportController.js" />
+        <option value="$PROJECT_DIR$/mainapp/models.py" />
+        <option value="$PROJECT_DIR$/CampainManager/settings.py" />
+        <option value="$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css" />
+        <option value="$PROJECT_DIR$/mainapp/templates/mainapp/Client.html" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/Manager.html" />
         <option value="$PROJECT_DIR$/mainapp/static/mainapp/css/main.css" />
-        <option value="$PROJECT_DIR$/mainapp/static/mainapp/js/newReportController.js" />
-        <option value="$PROJECT_DIR$/mainapp/admin.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/console.sql" />
         <option value="$PROJECT_DIR$/mainapp/views.py" />
+        <option value="$PROJECT_DIR$/mainapp/admin.py" />
         <option value="$PROJECT_DIR$/mainapp/templates/mainapp/Accounter.html" />
       </list>
     </option>
@@ -305,7 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -360,73 +304,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mainapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="CampainManager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,6 +322,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
@@ -678,7 +563,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="CampainManager.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -692,7 +577,7 @@
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+      <option name="customRunCommand" value="python3 manage.py runserver 0.0.0.0:8080" />
       <method />
     </configuration>
     <list size="1">
@@ -734,18 +619,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.273021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30547947" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16882068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35509554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34383562" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20840065" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -753,6 +636,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30821916" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6560425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -773,12 +657,11 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/css/main.css" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1486">
@@ -787,14 +670,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/django_migrations">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -802,13 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -823,36 +699,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/campaigns.html" />
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/templ.html" />
-    <entry file="file://$PROJECT_DIR$/CampainManager/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CampainManager/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_service">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -870,46 +725,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="184" column="28" lean-forward="false" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/sqlite_sequence">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="64" lean-forward="false" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -928,14 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1107">
           <caret line="79" column="18" lean-forward="true" selection-start-line="76" selection-start-column="13" selection-end-line="79" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForClient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -958,16 +774,6 @@
         <state relative-caret-position="676">
           <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,55 +819,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_client">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="172" column="18" lean-forward="false" selection-start-line="172" selection-start-column="18" selection-end-line="172" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/orderController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,28 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Manager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_campaign">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1098,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,15 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,93 +872,250 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="543" column="0" lean-forward="false" selection-start-line="543" selection-start-column="0" selection-end-line="543" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/auth_user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="171" column="308" lean-forward="false" selection-start-line="171" selection-start-column="308" selection-end-line="171" selection-end-column="308" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#3155#5027#0" expanded="false" />
-            <element signature="e#5098#6846#0" expanded="false" />
-            <element signature="e#6917#8694#0" expanded="false" />
-            <marker date="1491812371000" expanded="true" signature="3781:4158" ph="Select maina... mainapp_broadcast" />
-            <marker date="1491812371000" expanded="true" signature="4057:4132" ph="Select id Fr... mainapp_rtvresource" />
-            <marker date="1491812371000" expanded="true" signature="4218:4821" ph="Select maina... " />
-            <marker date="1491812371000" expanded="true" signature="5600:5977" ph="Select maina... mainapp_broadcast" />
-            <marker date="1491812371000" expanded="true" signature="5876:5951" ph="Select id Fr... mainapp_rtvresource" />
-            <marker date="1491812371000" expanded="true" signature="6037:6640" ph="Select maina... " />
-            <marker date="1491812371000" expanded="true" signature="7411:7800" ph="Select maina... mainapp_broadcast" />
-            <marker date="1491812371000" expanded="true" signature="7687:7762" ph="Select id Fr... mainapp_rtvresource" />
-            <marker date="1491812371000" expanded="true" signature="7873:8488" ph="Select maina... " />
-            <marker date="1491812371000" expanded="true" signature="8785:8832" ph="SELECT SUM(m... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="8785:8849" ph="SELECT SUM(m... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="8785:8850" ph="SELECT SUM(p... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="8785:8861" ph="SELECT SUM(m... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="8785:8864" ph="SELECT SUM(p... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="9054:9166" ph="SELECT last_... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="9054:9237" ph="SELECT last_... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="9054:9259" ph="SELECT last_... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="9054:9283" ph="SELECT last_... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="9054:9319" ph="SELECT last_... mainapp_campaign" />
-            <marker date="1491812371000" expanded="true" signature="9704:9762" ph="SELECT SUM(p... auth_user" />
-            <marker date="1491812371000" expanded="true" signature="9704:9976" ph="SELECT SUM(p... auth_user" />
-            <marker date="1491812371000" expanded="true" signature="9704:9999" ph="SELECT SUM(p... auth_user" />
-            <marker date="1491812371000" expanded="true" signature="9900:9975" ph="SELECT maina... mainapp_employee" />
-            <marker date="1491812371000" expanded="true" signature="10168:10247" ph="SELECT SUM(p... mainapp_campaign" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_employee">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="212" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="295" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampainManager/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Analyst.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_report">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/campaign.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1490">
+          <caret line="187" column="1" lean-forward="true" selection-start-line="187" selection-start-column="1" selection-end-line="187" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="86" column="45" lean-forward="false" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Manager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="85" column="81" lean-forward="false" selection-start-line="85" selection-start-column="81" selection-end-line="85" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_client">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/Accounter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="480">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/fe5a056a/0a2f7af5-2786-416a-a4f5-bbef6d684dfb/mainapp_campaign">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/js/orderController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1965">
+          <caret line="131" column="26" lean-forward="false" selection-start-line="131" selection-start-column="26" selection-end-line="131" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/static/mainapp/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="157" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="185" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/templates/mainapp/CampaignForClient.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <folding>
+            <element signature="e#5574#7030#0" expanded="false" />
+            <element signature="e#7101#8878#0" expanded="false" />
+            <marker date="1492029070000" expanded="true" signature="3965:4342" ph="Select maina... mainapp_broadcast" />
+            <marker date="1492029070000" expanded="true" signature="4241:4316" ph="Select id Fr... mainapp_rtvresource" />
+            <marker date="1492029070000" expanded="true" signature="4402:5005" ph="Select maina... " />
+            <marker date="1492029070000" expanded="true" signature="5784:6161" ph="Select maina... mainapp_broadcast" />
+            <marker date="1492029070000" expanded="true" signature="6060:6135" ph="Select id Fr... mainapp_rtvresource" />
+            <marker date="1492029070000" expanded="true" signature="6221:6824" ph="Select maina... " />
+            <marker date="1492029070000" expanded="true" signature="7595:7984" ph="Select maina... mainapp_broadcast" />
+            <marker date="1492029070000" expanded="true" signature="7871:7946" ph="Select id Fr... mainapp_rtvresource" />
+            <marker date="1492029070000" expanded="true" signature="8057:8672" ph="Select maina... " />
+            <marker date="1492029070000" expanded="true" signature="8969:9016" ph="SELECT SUM(m... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="8969:9033" ph="SELECT SUM(m... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="8969:9034" ph="SELECT SUM(p... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="8969:9045" ph="SELECT SUM(m... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="8969:9048" ph="SELECT SUM(p... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="9238:9350" ph="SELECT last_... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="9238:9421" ph="SELECT last_... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="9238:9443" ph="SELECT last_... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="9238:9467" ph="SELECT last_... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="9238:9503" ph="SELECT last_... mainapp_campaign" />
+            <marker date="1492029070000" expanded="true" signature="9646:9941" ph="SELECT SUM(p... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="9842:9917" ph="SELECT maina... mainapp_employee" />
+            <marker date="1492029070000" expanded="true" signature="10099:10229" ph="SELECT repor... " />
+            <marker date="1492029070000" expanded="true" signature="10099:10275" ph="SELECT repor... " />
+            <marker date="1492029070000" expanded="true" signature="10099:10276" ph="SELECT repor... " />
+            <marker date="1492029070000" expanded="true" signature="10425:10539" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10557" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10581" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10598" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10614" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10636" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10653" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10664" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10686" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10713" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="10425:10735" ph="SELECT first... auth_user" />
+            <marker date="1492029070000" expanded="true" signature="11132:11211" ph="SELECT SUM(p... mainapp_campaign" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CampainManager/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="49" />
           <folding />
         </state>
       </provider>

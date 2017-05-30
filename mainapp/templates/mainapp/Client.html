@@ -45,7 +45,7 @@
                 <div class="campain-info">У вас поки немає жодної кампанії.</div>
             {% endfor %}
             </table>
-            <div class="half-width float-left">Загальний бюджет: {{ budget }}</div> <div class="half-width float-right"> <a href="/api/campaign/order" class="float-right btn btn-primary btn-order">Замовити</a></div>
+            <div class="half-width float-left overall-budget"><span class="overall-budget-container">Загальний бюджет: {{ budget }}</span></div> <div class="half-width float-right"> <span class="order-button-wrapper"><a href="/api/campaign/order" class="float-right btn btn-primary order-button">Замовити</a></span></div>
         </div>
         <div class="main-block-right col-xs-12 col-sm-4 col-md-4">
            <div class="personal-block-wrapper">
@@ -72,12 +72,22 @@
                    <div class="personal-block-elements ">
                         <span class="vertical-centered ">Адреса: </span><span  class="vertical-centered ">{{ client.address }}</span>
                    </div>
-                    <div class="personal-block-elements ">
-                        <span class="vertical-centered ">Контактна особа: </span><span  class="vertical-centered ">{{ client.contactPersone }}</span>
-                   </div>
+{#                    <div class="personal-block-elements ">#}
+{#                        <span class="vertical-centered ">Контактна особа: </span><span  class="vertical-centered ">{{ client.contactPersone }}</span>#}
+{#                   </div>#}
 
                </div>
            </div>
+            <div><center><h4>Остання активність</h4></center></div>
+            <div class="last-reports">
+                {% for activity in activities %}
+                    <div class="activity-wrapper">
+                    <center><div><a href="api/campaign/{{ activity.campaign_id }}">{{ activity.subject }}</a></div></center>
+                    <div>{{ activity.report }}</div>
+                    <div class="activity-date">{{ activity.date }}</div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
 
     </div>

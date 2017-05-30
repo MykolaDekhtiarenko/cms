@@ -30,9 +30,10 @@ def redirectUser(request):
     else: raise ValueError('A very specific bad thing happened')
 
 def client(request):
+    last_activities = lastReportActivities(request.user.client.edrpou)
     campains = Campaign.objects.filter(client=request.user.client).values()
     overallBudget = getClientCampaignsBudget(request.user.client.edrpou)
-    return render(request, 'mainapp/Client.html', {'client': request.user.client, 'campains': campains, 'budget': overallBudget})
+    return render(request, 'mainapp/Client.html', {'client': request.user.client, 'campains': campains, 'budget': overallBudget, "activities": last_activities})
 
 def analyst(request):
     campains = Campaign.objects.filter(state="Active").values()
@@ -44,8 +45,9 @@ def manager(request):
     return render(request, 'mainapp/Manager.html', {'user': request.user, 'campains': campains, 'clients': clients})
 
 def accounter(request):
+    allClientsManager = forAllClientsManager()
     rData = reportForPrint()
-    return render(request, 'mainapp/Accounter.html', {'report': rData})
+    return render(request, 'mainapp/Accounter.html', {'report': rData, 'supermanager': allClientsManager})
 
 
 def order(request):
@@ -155,7 +157,27 @@ def getClientsBudgetsForEmployee(employee_id):
     query = 'SELECT  last_name, first_name, SUM(plannedBudget) AS money FROM mainapp_campaign, auth_user u WHERE employee_id='+str(employee_id)+' AND mainapp_campaign.client_id IN (SELECT c.edrpou FROM mainapp_client c WHERE c.user_id = u.id) GROUP BY mainapp_campaign.client_id'
     cursor.execute(query)
     row = dictfetchall(cursor)
-    print(row)
+    return row
+
+def reportForPrint():
+    cursor = connection.cursor()
+    query = 'SELECT SUM(plannedBudget) AS budget, first_name, last_name, salary FROM auth_user INNER JOIN mainapp_employee ON auth_user.id = mainapp_employee.user_id, mainapp_campaign c WHERE c.employee_id IN(SELECT mainapp_employee.id FROM mainapp_employee WHERE user_id=auth_user.id) GROUP BY c.employee_id'
+    cursor.execute(query)
+    row = dictfetchall(cursor)
+    return row
+
+def lastReportActivities(client_id):
+    cursor = connection.cursor()
+    query = 'SELECT report, date, campaign_id, c.subject FROM mainapp_report r, mainapp_campaign c WHERE r.campaign_id = c.id AND  c.client_id="'+client_id+'" ORDER BY r.date DESC LIMIT 0, 6'
+    cursor.execute(query)
+    row = dictfetchall(cursor)
+    return row
+
+def forAllClientsManager():
+    cursor = connection.cursor()
+    query = 'SELECT first_name, last_name, salary FROM auth_user u, mainapp_employee emp WHERE emp.user_id=u.id AND emp.id IN (SELECT DISTINCT id FROM mainapp_employee e WHERE NOT EXISTS ( SELECT edrpou FROM mainapp_client c WHERE NOT EXISTS ( SELECT * FROM mainapp_campaign WHERE employee_id=e.id AND client_id=c.edrpou)))'
+    cursor.execute(query)
+    row = dictfetchall(cursor)
     return row
 
 def dictfetchall(cursor):
@@ -167,12 +189,6 @@ def dictfetchall(cursor):
         for row in cursor.fetchall()
     ]
 
-def reportForPrint():
-    cursor = connection.cursor()
-    query = 'SELECT SUM(plannedBudget) AS budget, first_name, last_name, salary FROM auth_user INNER JOIN mainapp_employee ON auth_user.id = mainapp_employee.user_id, mainapp_campaign c WHERE c.employee_id IN(SELECT mainapp_employee.id FROM mainapp_employee WHERE user_id=auth_user.id) GROUP BY c.employee_id'
-    cursor.execute(query)
-    row = dictfetchall(cursor)
-    return row
 
 
 # def getClientCampaignsBudget(client_id):

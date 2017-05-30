@@ -52,7 +52,7 @@ body{
 
 .personal-block{
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'PT Sans', sans-serif;
     color: white;
 }
@@ -67,7 +67,7 @@ body{
 }
 .personal-block-elements{
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left!important;
     padding-right: 10px;
     padding-left: 10px;
@@ -137,7 +137,7 @@ th {
     height: 40px;
     display: table;
     text-align: center;
-    background-color: #e8e8e8;
+    background-color: #f4f4f4;
     border-top: 10px solid #003F72;
 }
 
@@ -171,4 +171,55 @@ btn-order{
 
 .personal-block-header{
     color: #337ab7!important;
+}
+
+.last-reports{
+   max-height: 49vh;
+   overflow: scroll;
+}
+
+.activity-wrapper{
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.activity-date{
+    text-align: right;
+    font-size: 13px;
+}
+
+.overall-budget{
+    margin-top: 5px;
+    padding-left: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+}
+
+.overall-budget-container{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #337ab7;
+}
+
+.order-button-wrapper{
+    margin-top: 5px;
+}
+
+.order-button{
+    border-radius: 8px!important;
+}
+
+.colorblack{
+    color: black;
+}
+.colorwhite{
+    color: white!important;
 }
